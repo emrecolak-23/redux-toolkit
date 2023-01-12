@@ -3,6 +3,9 @@ import { configureStore } from '@reduxjs/toolkit';
 import { songReducer } from './slices/songsSlice';
 import { moviesReducer } from './slices/moviesSlice';
 
+import { addSong, removeSong } from './slices/songsSlice';
+import { addMovie, removeMovie } from './slices/moviesSlice';
+
 const store = configureStore({
   reducer: {
     songs: songReducer,
@@ -11,6 +14,7 @@ const store = configureStore({
 });
 
 export { store };
+export { addSong, removeSong, addMovie, removeMovie };
 
 // console.log(songsSlice.actions.addSong('Some Song!!'));
 

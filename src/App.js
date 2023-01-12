@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 
-import { reset } from './store';
+import { reset } from './store/actions';
 
 import './styles.css';
 import MoviePlaylist from './components/MoviePlaylist';
